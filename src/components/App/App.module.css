@@ -1,0 +1,18 @@
+.app {
+  text-align: center;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+}
+
+nav a.active {
+  font-weight: bold;
+}

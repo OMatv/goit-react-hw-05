@@ -1,0 +1,15 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.link {
+  color: #ce12ac;
+  text-decoration: none;
+  font-size: 20px;
+}
