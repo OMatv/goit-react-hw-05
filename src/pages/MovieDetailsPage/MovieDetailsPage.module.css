@@ -1,57 +1,19 @@
-/* .container {
-  padding: 20px;
-  display: flexbox;
-}
-
-.link {
-  margin: 20px auto 20px 20px;
-  color: blue;
-  font-size: 20px;
-  display: flex;
-  flex-direction: column;
-  text-decoration-style: inherit;
-}
-img {
-  max-width: 80%;
-  height: auto;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: row;
-}
-
-h1 {
-  font-size: 2em;
-  color: #333;
-}
-
-.description {
-  max-width: 40%;
-  font-size: 18px;
-}
-button {
-  margin: 10px auto 10px auto;
-}
-
-hr {
-  margin: 20px 0;
-} */
-
 .container {
   padding: 20px;
 }
 
 .button {
-  margin: 10px auto 10px auto;
+  margin-bottom: 20px;
   padding: 10px 20px;
-  background-color: #b9b9ba;
-  color: rgb(2, 2, 2);
-  border: 1px solid #333;
+  background-color: #007bff;
+  color: white;
+  border: none;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .button:hover {
-  background-color: #0777e7;
+  background-color: #0056b3;
 }
 
 .details {
@@ -60,9 +22,9 @@ hr {
 }
 
 .poster {
-  max-width: 500px;
+  max-width: 300px;
   border-radius: 10px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .info {
@@ -70,28 +32,26 @@ hr {
 }
 
 .title {
-  font-size: 50px;
-  margin: 0px auto 20px auto;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .userScore {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #333;
+  color: #555;
 }
 
 .genres {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #333;
+  color: #555;
 }
 
 .description {
-  max-width: 500px;
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #333;
-  flex-direction: column;
 }
 
 .links {
@@ -99,10 +59,8 @@ hr {
 }
 
 .link {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   margin-right: 15px;
-  margin-bottom: 10px;
   text-decoration: none;
   color: #007bff;
   font-weight: bold;

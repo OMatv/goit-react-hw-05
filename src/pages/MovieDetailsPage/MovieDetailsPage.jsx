@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import {
   Link,
@@ -18,7 +18,7 @@ export default function MovieDetailsPage() {
   const [movie, setMovie] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
-  const backLink = location.state?.from || "/movies";
+  const locationRef = useRef(location.state?.from || "/movies");
 
   useEffect(() => {
     axios
@@ -33,7 +33,10 @@ export default function MovieDetailsPage() {
 
   return (
     <div className={styles.container}>
-      <button onClick={() => navigate(backLink)} className={styles.button}>
+      <button
+        onClick={() => navigate(locationRef.current)}
+        className={styles.button}
+      >
         Go back
       </button>
       <div className={styles.details}>
@@ -52,12 +55,16 @@ export default function MovieDetailsPage() {
           </p>
           <p className={styles.description}>{movie.overview}</p>
           <div className={styles.links}>
-            <Link to="cast" state={{ from: backLink }} className={styles.link}>
+            <Link
+              to="cast"
+              state={{ from: locationRef.current }}
+              className={styles.link}
+            >
               Cast
             </Link>
             <Link
               to="reviews"
-              state={{ from: backLink }}
+              state={{ from: locationRef.current }}
               className={styles.link}
             >
               Reviews
