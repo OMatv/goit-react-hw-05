@@ -7,7 +7,7 @@ const BASE_URL = "https://api.themoviedb.org/3";
 ("https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png");
 
 const headers = {
-  Authorization: `Bearer ${API_KEY}`,
+  Authorization: `Bearer  ${API_KEY}`,
 };
 
 export const getTrendingMovies = async () => {

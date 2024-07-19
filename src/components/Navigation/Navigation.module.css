@@ -1,22 +1,17 @@
 .nav {
   display: flex;
-  justify-content: space-around;
-  background-color: #282c34;
+  justify-content: left;
+
   padding: 10px;
 }
 
 .link {
   text-decoration: none;
   font-size: 20px;
-}
-
-.homeActive {
-  font-weight: bold;
-  text-decoration: underline;
   color: black;
 }
 
-.moviesActive {
+.active {
   font-weight: bold;
   text-decoration: underline;
   color: #ef0fca;

@@ -10,8 +10,8 @@
 
 .link {
   display: block;
-  text-decoration: none;
-  color: #000;
+  text-decoration: underline;
+  color: #1109f5;
 }
 
 .image {
